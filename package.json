@@ -1,0 +1,35 @@
+{
+  "name": "graphQLecole",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --coverage --runInBand --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fbartoli/graphQLecole.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fbartoli/graphQLecole/issues"
+  },
+  "homepage": "https://github.com/Fbartoli/graphQLecole#readme",
+  "dependencies": {
+    "apollo-server": "^2.18.1",
+    "dotenv": "^8.2.0",
+    "pg": "^8.3.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "prettier-eslint": "^11.0.0"
+  }
+}
