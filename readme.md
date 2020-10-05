@@ -17,12 +17,15 @@ username: postgres
 password: postgres
 portDb: 5432
 
-Design choice:
+### Design choice:
+
 graphql requirement
 Apollo server
 Postgres
 docker
-ORM: - Sequelize simplicity
 
-To improve:
-Type on schemas
+### To improve:
+
+Type on schemas and table
+
+### Geolocation filter done

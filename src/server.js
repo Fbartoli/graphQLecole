@@ -1,13 +1,15 @@
 const { ApolloServer } = require('apollo-server');
-const typeDefs = require('./schema');
-const resolvers = require('./resolvers');
+const path = require('path');
+const typeDefs = require(path.resolve('src/schema.js'));
+const resolvers = require(path.resolve('src/resolvers'));
+const SchoolDb = require(path.resolve('src/db'));
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  // context() {
-  //   return { models, db }
-  // },
+  context() {
+    return { SchoolDb };
+  },
 });
 
 server.listen().then(({ url }) => {
