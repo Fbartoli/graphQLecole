@@ -7,7 +7,7 @@
 
 ## How to use :
 
-- npm install
+- npm install --production
 - open a new terminal cd src/db docker-compose -f postgresql.yml up
 - npm start
 
@@ -17,15 +17,9 @@ username: postgres
 password: postgres
 portDb: 5432
 
-### Design choice:
+### Using:
 
-graphql requirement
-Apollo server
 Postgres
 docker
-
-### To improve:
-
-Type on schemas and table
 
 ### Geolocation filter done
