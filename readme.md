@@ -4,6 +4,7 @@
 
 - Docker
 - NODE LTS 12
+- docker compose
 
 ## How to use :
 
