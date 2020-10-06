@@ -938,6 +938,12 @@ portDb: 5432</p>
 <p>Postgres
 docker</p>
 <h3 id="geolocation-filter-done">Geolocation filter done</h3>
+<h3 id="improvements">Improvements</h3>
+<p>-Cache requests
+-Let the database do the pagination instead of JS (not scalable on big dataset)
+Originally I was doing the pagination on postgres request using LIMIT and OFFSET but it was colliding with the filtering afterhand in JS.
+-Unit testing
+They were done at the start of the exercise using the TDD technique, however since I was not familiar with the graphql and the returns of the libraries and because I changed my way of solving the exercises I had to remove the unit tests.</p>
 
     </body>
     </html>

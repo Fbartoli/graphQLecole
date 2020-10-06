@@ -62,12 +62,9 @@ function deg2rad(deg) {
 function queryBuilder(input) {
   var values = [];
   var text = 'SELECT * FROM public.school';
-  var limit = input['limit'] ? input['limit'] : 10;
-  var page = input['page'] ? input['page'] * limit : 0;
   if (hasFilterParameters) {
     text += whereBuilder(input, values);
   }
-  text += ` LIMIT ${limit} OFFSET ${page};`;
   return { text, values };
 }
 

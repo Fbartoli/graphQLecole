@@ -28,3 +28,11 @@ Postgres
 docker
 
 ### Geolocation filter done
+
+### Improvements
+
+-Cache requests
+-Let the database do the pagination instead of JS (not scalable on big dataset)
+Originally I was doing the pagination on postgres request using LIMIT and OFFSET but it was colliding with the filtering afterhand in JS.
+-Unit testing
+They were done at the start of the exercise using the TDD technique, however since I was not familiar with the graphql and the returns of the libraries and because I changed my way of solving the exercises I had to remove the unit tests.
