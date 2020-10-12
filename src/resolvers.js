@@ -16,7 +16,7 @@ module.exports = {
       if (isGeoLocationFilterOn(input))
         result = result.filter((x) => filterByDistance(x, input));
       if (countResult > limit) {
-        result = result.slice(page, limit)
+        result = result.slice(page, page + limit)
       }
       return result;
     },
